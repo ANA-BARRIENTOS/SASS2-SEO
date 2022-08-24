@@ -322,7 +322,6 @@ section.home_heroImage {
         width: 190px; }
 
 div.section2 {
-  background-color: #ffffff;
   padding: 2rem 0rem; }
   div.section2 h2 {
     text-align: center;
@@ -342,27 +341,30 @@ div.section2 {
       div.section2 section.propiedades_destacadas article.propiedad_container:hover {
         transform: scale(1.1); }
       div.section2 section.propiedades_destacadas article.propiedad_container figure.cuadrados {
-        background-color: #333333;
         width: 250px;
         height: 200px;
         margin-bottom: 10px; }
       div.section2 section.propiedades_destacadas article.propiedad_container figure#cuadrado1 {
         background-image: url(../img/propiedad1.jpg);
+        background-color: #d4d4d4;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat; }
       div.section2 section.propiedades_destacadas article.propiedad_container figure#cuadrado2 {
         background-image: url(../img/propiedad2.jpg);
+        background-color: #d4d4d4;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat; }
       div.section2 section.propiedades_destacadas article.propiedad_container figure#cuadrado3 {
         background-image: url(../img/propiedad3.jpg);
+        background-color: #d4d4d4;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat; }
       div.section2 section.propiedades_destacadas article.propiedad_container figure#cuadrado4 {
         background-image: url(../img/propiedad4.jpg);
+        background-color: #d4d4d4;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat; }
@@ -545,38 +547,88 @@ section.vender_grid--container {
 /* +++++++++++ */
 /* End VENDER */
 /* +++++++++ */
-/* +++++++++++++++++++ */
+/* ++++++++++++++ */
 /* Open NOSOTROS HTML */
-/* +++++++++++++++++ */
-main#html4 .about__sectionContainer {
-  background-color: white;
-  width: 90%;
-  margin: 3rem auto;
-  align-items: center; }
-  main#html4 .about__sectionContainer .about__dataContainer, main#html4 .about__sectionContainer .about__photoContainer {
+/* ++++++++++++ */
+main#html4 {
+  /* Media Queries */ }
+  main#html4 .about__sectionContainer {
+    background-color: white;
+    width: 90%;
+    margin: 3rem auto;
+    align-items: center; }
+    main#html4 .about__sectionContainer .about__dataContainer,
+    main#html4 .about__sectionContainer .about__photoContainer {
+      padding: 2rem; }
+  main#html4 .about__photoContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; }
+  main#html4 .about__dataContainer h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
+  main#html4 .about__dataContainer p {
+    text-align: justify; }
+  main#html4 div.equipo {
+    background-color: #731010;
+    background-color: #d4d4d4;
     padding: 2rem; }
-
-main#html4 .about__photoContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px; }
-
-main#html4 .about__dataContainer h1 {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 1rem; }
-
-main#html4 .about__dataContainer p {
-  text-align: justify; }
-
-/* Media Queries */
-@media screen and (min-width: 768px) {
-  .about__sectionContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center; } }
-
-/* ++++++++++++++++++ */
-/* End NOSOTROS HTML */
-/* ++++++++++++++++ */
+    main#html4 div.equipo h2 {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem; }
+    main#html4 div.equipo section.team {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin-bottom: 3rem; }
+      main#html4 div.equipo section.team section.members {
+        border-radius: 8px 0px 8px 0px;
+        border: #232b2b solid 1px;
+        margin: 0rem 1rem;
+        /* TRANSITION (to hover transformation) */
+        transition: all 1s; }
+        main#html4 div.equipo section.team section.members:hover {
+          transform: scale(1.1); }
+        main#html4 div.equipo section.team section.members article.team_container {
+          width: 250px;
+          height: auto;
+          margin: 20px 20px; }
+          main#html4 div.equipo section.team section.members article.team_container figure.cuadrados {
+            width: 250px;
+            height: 200px;
+            margin-bottom: 16px; }
+          main#html4 div.equipo section.team section.members article.team_container figure#member1 {
+            background-image: url(../img/team-member-01.jpg);
+            background-color: #d4d4d4;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat; }
+          main#html4 div.equipo section.team section.members article.team_container figure#member2 {
+            background-image: url(../img/team-member-02.jpg);
+            background-color: #d4d4d4;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat; }
+          main#html4 div.equipo section.team section.members article.team_container figure#member3 {
+            background-image: url(../img/team-member-03.jpg);
+            background-color: #d4d4d4;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat; }
+          main#html4 div.equipo section.team section.members article.team_container div.team_textContainer {
+            margin: 0px 10px 0px 10px; }
+            main#html4 div.equipo section.team section.members article.team_container div.team_textContainer h3 {
+              text-align: center;
+              margin-bottom: 10px; }
+            main#html4 div.equipo section.team section.members article.team_container div.team_textContainer p {
+              font-size: 14px;
+              text-align: center; }
+  @media screen and (min-width: 768px) {
+    main#html4 .about__sectionContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center; } }
