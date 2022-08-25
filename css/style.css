@@ -72,7 +72,7 @@ body {
 header {
   padding: 20px 0px 20px 0px;
   text-align: center;
-  background-image: linear-gradient(to left, grey, whitesmoke, grey); }
+  background-image: linear-gradient(to left, #707070, #d4d4d4, #707070); }
   header a img#logo {
     height: 80px; }
 
@@ -197,13 +197,14 @@ header {
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
-    width: 90%; }
+    width: 90%;
+    margin: 2rem 0rem; }
     .ftr .ftr_section2 .contact_containers {
       padding: 0.3rem;
       margin: 3rem 1rem;
       border-radius: 0.25rem 0rem 0.25rem 0rem; }
       .ftr .ftr_section2 .contact_containers:hover {
-        background-color: crimson;
+        background-color: #c20114;
         border-radius: 0.25rem 0rem 0.25rem 0rem; }
     .ftr .ftr_section2 a {
       color: #fff;

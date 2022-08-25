@@ -22,7 +22,7 @@ body {
 header {
     padding: 20px 0px 20px 0px;
     text-align: center;
-    background-image: linear-gradient(to left, grey, whitesmoke, grey);
+    background-image: linear-gradient(to left, #707070, #d4d4d4, #707070);
 
     a img#logo {
         height: 80px;
@@ -234,6 +234,7 @@ header {
         align-items: center;
         align-content: center;
         width: 90%;
+        margin: 2rem 0rem;
 
         .contact_containers {
             padding: 0.3rem;
@@ -241,7 +242,7 @@ header {
             border-radius: 0.25rem 0rem 0.25rem 0rem;
 
             &:hover {
-                background-color: crimson;
+                background-color: #c20114;
                 border-radius: 0.25rem 0rem 0.25rem 0rem;
             }
         }
